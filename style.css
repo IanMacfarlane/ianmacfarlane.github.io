@@ -22,6 +22,5 @@ body {
 }
 
 #larue-thumbnail {
-	align-self: end;
-	size: 25%;
+	position: absolute;
 }
