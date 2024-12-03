@@ -11,6 +11,7 @@
 		<div id="background"></div>
 		<div id="homepage">
 			<img id="larue-thumbnail" src="images/larue_thumbnail.png">
+			<img id="montpelier-thumbnail" src="images/montpelier_idaho_thumbnail.png">
 		</div>
 	</body>
 	<script>
@@ -37,6 +38,14 @@
 		let left = (930-290-230)*scale
 		larueThumbnailElement.style.width = width+"px";
 		larueThumbnailElement.style.left = left+"px";
+
+		let montpelierThumbnailElement = document.getElementById("montpelier-thumbnail")
+		let height = 150 * scale;
+		left = (800-290-50)*scale;
+		let topDist = (850-330-50)*scale;
+		montpelierThumbnailElement.style.width = height+"px";
+		montpelierThumbnailElement.style.left = left+"px";
+		montpelierThumbnailElement.style.top = topDist+"px";
 
 		// TODO position location icons based on scale
 		// TODO timeline dates events text
