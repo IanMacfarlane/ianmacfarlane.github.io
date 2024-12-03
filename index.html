@@ -5,9 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Our Western Roots</title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="images/larue_thumbnail.png">
 	</head>
 	<body>
-		<div id="background">
+		<div id="background"></div>
+		<div id="homepage">
+			<img id="larue-thumbnail" src="images/larue_thumbnail.png">
 		</div>
 	</body>
 	<script>
@@ -15,6 +18,7 @@
 		let viewportWidth = window.innerWidth;
 		let viewportHeight = window.innerHeight;
 		let backgroundElement = document.getElementById("background")
+
 
 		let scale = viewportWidth / 640;
 		if (viewportWidth*(950/640) > viewportHeight) {
@@ -28,6 +32,11 @@
 		let translateLeft = -290*scale;
 		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
 
+		let larueThumbnailElement = document.getElementById("larue-thumbnail")
+		let width = 230 * scale;
+		larueThumbnailElement.style.width = width+"px";
+
 		// TODO position location icons based on scale
+		// TODO timeline dates events text
 	</script>
 </html>

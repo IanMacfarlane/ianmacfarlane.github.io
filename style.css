@@ -10,3 +10,18 @@ body {
 	width: 100vw;
 	height: 100vh;
 }
+
+#homepage {
+	position: absolute;
+	top: 0;
+	left 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#larue-thumbnail {
+	align-self: end;
+	size: 25%;
+}
