@@ -23,6 +23,10 @@ body {
 
 #larue-thumbnail {
 	position: absolute;
+}
+
+#larue-thumbnail-container {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

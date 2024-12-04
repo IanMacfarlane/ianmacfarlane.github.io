@@ -10,12 +10,12 @@
 	<body>
 		<div id="background"></div>
 		<div id="homepage">
-			<div id="larue-thumbnail">
-			<img src="images/larue_thumbnail.png">
-			<div class="thumbnail-label" id="larue-label">
-				<div>LaRue Quayle</div>
-				<div>1902 - 1992</div>
-			</div>
+			<div id="larue-thumbnail-container">
+				<img id="larue-thumbnail" src="images/larue_thumbnail.png">
+				<div class="thumbnail-label" id="larue-label">
+					<div>LaRue Quayle</div>
+					<div>1902 - 1992</div>
+				</div>
 			</div>
 			<div>
 				<img id="montpelier-thumbnail" src="images/montpelier_idaho_thumbnail.png">
@@ -51,8 +51,14 @@
 		let width = 230 * scale;
 		let left = (930-290-230)*scale
 		larueThumbnailElement.style.width = width+"px";
-		larueThumbnailElement.style.left = left+"px";
+		//larueThumbnailElement.style.left = left+"px";
 
+		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container");
+		larueThumbnailContainerElement.style.left = left+"px";
+		larueThumbnailContainerElement.style.width = width+"px";
+		larueThumbnailContainerElement.style.height = (308*scale)+"px";
+
+		// TODO move container, change image size
 		let larueLabelElement = document.getElementById("larue-label");
 		let topDist = (300)*scale;
 		left = (960-290-230)*scale;
