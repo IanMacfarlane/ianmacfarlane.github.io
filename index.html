@@ -12,6 +12,9 @@
 		<div id="homepage">
 			<img id="larue-thumbnail" src="images/larue_thumbnail.png">
 			<img id="montpelier-thumbnail" src="images/montpelier_idaho_thumbnail.png">
+			<img id="mudlake-thumbnail" src="images/mud_lake_idaho_thumbnail.png">
+			<img id="saltlake-thumbnail" src="images/salt_lake_thumbnail.png">
+			<img id="cedarcity-thumbnail" src="images/cedar_city_thumbnail.png">
 		</div>
 	</body>
 	<script>
@@ -46,6 +49,30 @@
 		montpelierThumbnailElement.style.width = height+"px";
 		montpelierThumbnailElement.style.left = left+"px";
 		montpelierThumbnailElement.style.top = topDist+"px";
+
+		let mudlakeThumbnailElement = document.getElementById("mudlake-thumbnail")
+		height = 100 * scale;
+		left = (720-290-50)*scale;
+		topDist = (720-330-50)*scale;
+		mudlakeThumbnailElement.style.width = height+"px";
+		mudlakeThumbnailElement.style.left = left+"px";
+		mudlakeThumbnailElement.style.top = topDist+"px";
+
+		let saltlakeThumbnailElement = document.getElementById("saltlake-thumbnail")
+		height = 100 * scale;
+		left = (770-290-50)*scale;
+		topDist = (970-330-50)*scale;
+		saltlakeThumbnailElement.style.width = height+"px";
+		saltlakeThumbnailElement.style.left = left+"px";
+		saltlakeThumbnailElement.style.top = topDist+"px";
+
+		let cedarcityThumbnailElement = document.getElementById("cedarcity-thumbnail")
+		height = 100 * scale;
+		left = (700-290-50)*scale;
+		topDist = (1180-330-50)*scale;
+		cedarcityThumbnailElement.style.width = height+"px";
+		cedarcityThumbnailElement.style.left = left+"px";
+		cedarcityThumbnailElement.style.top = topDist+"px";
 
 		// TODO position location icons based on scale
 		// TODO timeline dates events text
