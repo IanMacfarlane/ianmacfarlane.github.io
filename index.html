@@ -11,17 +11,27 @@
 		<div id="background"></div>
 		<div id="homepage">
 			<img id="larue-thumbnail" src="images/larue_thumbnail.png">
-			<img id="montpelier-thumbnail" src="images/montpelier_idaho_thumbnail.png">
-			<img id="mudlake-thumbnail" src="images/mud_lake_idaho_thumbnail.png">
-			<img id="saltlake-thumbnail" src="images/salt_lake_thumbnail.png">
-			<img id="cedarcity-thumbnail" src="images/cedar_city_thumbnail.png">
+			<div>
+				<img id="montpelier-thumbnail" src="images/montpelier_idaho_thumbnail.png">
+				<label class="thumbnail-label" id="montpelier-label" for="montpelier-thumbnail">Montpelier Idaho</label>
+			</div>
+			<div>
+				<img id="mudlake-thumbnail" src="images/mud_lake_idaho_thumbnail.png">
+				<label class="thumbnail-label" id="mudlake-label" for="montpelier-thumbnail">Mud Lake</label>
+			</div>
+			<div>
+				<img id="saltlake-thumbnail" src="images/salt_lake_thumbnail.png">
+			</div>
+			<div>
+				<img id="cedarcity-thumbnail" src="images/cedar_city_thumbnail.png">
+			</div>
 		</div>
 	</body>
 	<script>
 		// center and scale background image
 		let viewportWidth = window.innerWidth;
 		let viewportHeight = window.innerHeight;
-		let backgroundElement = document.getElementById("background")
+		let backgroundElement = document.getElementById("background");
 
 
 		let scale = viewportWidth / 640;
@@ -36,21 +46,26 @@
 		let translateLeft = -290*scale;
 		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
 
-		let larueThumbnailElement = document.getElementById("larue-thumbnail")
+		let larueThumbnailElement = document.getElementById("larue-thumbnail");
 		let width = 230 * scale;
 		let left = (930-290-230)*scale
 		larueThumbnailElement.style.width = width+"px";
 		larueThumbnailElement.style.left = left+"px";
 
-		let montpelierThumbnailElement = document.getElementById("montpelier-thumbnail")
+		let montpelierThumbnailElement = document.getElementById("montpelier-thumbnail");
 		let height = 100 * scale;
-		left = (800-290-70)*scale;
-		let topDist = (850-330-70)*scale;
+		left = (780-290-50)*scale;
+		let topDist = (830-330-50)*scale;
 		montpelierThumbnailElement.style.width = height+"px";
 		montpelierThumbnailElement.style.left = left+"px";
 		montpelierThumbnailElement.style.top = topDist+"px";
+		let montpelierLabelElement = document.getElementById("montpelier-label");
+		left = (780-290+30)*scale;
+		topDist = (830-330+30)*scale;
+		montpelierLabelElement.style.left = left+"px";
+		montpelierLabelElement.style.top = topDist+"px";
 
-		let mudlakeThumbnailElement = document.getElementById("mudlake-thumbnail")
+		let mudlakeThumbnailElement = document.getElementById("mudlake-thumbnail");
 		height = 100 * scale;
 		left = (720-290-50)*scale;
 		topDist = (720-330-50)*scale;
@@ -66,7 +81,7 @@
 		saltlakeThumbnailElement.style.left = left+"px";
 		saltlakeThumbnailElement.style.top = topDist+"px";
 
-		let cedarcityThumbnailElement = document.getElementById("cedarcity-thumbnail")
+		let cedarcityThumbnailElement = document.getElementById("cedarcity-thumbnail");
 		height = 100 * scale;
 		left = (700-290-50)*scale;
 		topDist = (1180-330-50)*scale;
