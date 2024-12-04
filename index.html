@@ -13,11 +13,11 @@
 			<img id="larue-thumbnail" src="images/larue_thumbnail.png">
 			<div>
 				<img id="montpelier-thumbnail" src="images/montpelier_idaho_thumbnail.png">
-				<label class="thumbnail-label" id="montpelier-label" for="montpelier-thumbnail">Montpelier Idaho</label>
+				<div class="thumbnail-label" id="montpelier-label">Montpelier Idaho</label>
 			</div>
 			<div>
 				<img id="mudlake-thumbnail" src="images/mud_lake_idaho_thumbnail.png">
-				<label class="thumbnail-label" id="mudlake-label" for="montpelier-thumbnail">Mud Lake</label>
+				<div class="thumbnail-label" id="mudlake-label">Mud Lake</div>
 			</div>
 			<div>
 				<img id="saltlake-thumbnail" src="images/salt_lake_thumbnail.png">
@@ -45,6 +45,11 @@
 		let translateTop = -330*scale;
 		let translateLeft = -290*scale;
 		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
+
+		// TODO scale font and text boxes, might just need to make text boxes images?
+		let labelStylerElement = document.getElementById("thumbnail-label");
+		let fontSize = Math.round(16*scale);
+		//labelStylerElement.style.fontSize = "16px";
 
 		let larueThumbnailElement = document.getElementById("larue-thumbnail");
 		let width = 230 * scale;
