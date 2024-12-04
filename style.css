@@ -23,6 +23,10 @@ body {
 
 #larue-thumbnail {
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: end;
 }
 
 #montpelier-thumbnail {
@@ -38,8 +42,12 @@ body {
 	padding-left: 5px;
 	padding-right: 5px;
 	font-family: serif;
-	font-size: 16px;
-	width: 85px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#larueLabelElement {
 }
 
 #mudlake-thumbnail {
