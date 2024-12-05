@@ -38,14 +38,12 @@ body {
 	justify-self: center;
 	overflow: hidden;
 	white-space: nowrap;
-	font-size: 16px;
 }
 
 #larue-thumbnail-container {
 	position: absolute;
 	display: grid;
 	flex-direction: column;
-	/*align-items: center;*/
 	justify-content: center;
 }
 
@@ -53,7 +51,6 @@ body {
 	position: absolute;
 	display: grid;
 	flex-direction: column;
-	/*align-items: center;*/
 	justify-content: center;
 }
 
@@ -61,14 +58,19 @@ body {
 	position: absolute;
 	display: grid;
 	flex-direction: column;
-	/*align-items: center;*/
 	justify-content: center;
 }
 
-#saltlake-thumbnail {
+#saltlake-thumbnail-container {
 	position: absolute;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
 }
 
-#cedarcity-thumbnail {
+#cedarcity-thumbnail-container {
 	position: absolute;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
 }

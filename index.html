@@ -20,8 +20,7 @@
 			<div id="montpelier-thumbnail-container">
 				<img id="montpelier-thumbnail" src="images/montpelier_idaho_thumbnail.png">
 				<div class="thumbnail-label">
-					<div>Montpelier</div>
-					<div>Idaho</div>
+					<div>Montpelier Idaho</div>
 				</div>
 			</div>
 			<div id="mudlake-thumbnail-container">
@@ -30,11 +29,17 @@
 					<div>Mud Lake</div>
 				</div>
 			</div>
-			<div>
+			<div id="saltlake-thumbnail-container">
 				<img id="saltlake-thumbnail" src="images/salt_lake_thumbnail.png">
+				<div class="thumbnail-label">
+					<div>Salt Lake City</div>
+				</div>
 			</div>
-			<div>
+			<div id="cedarcity-thumbnail-container">
 				<img id="cedarcity-thumbnail" src="images/cedar_city_thumbnail.png">
+				<div class="thumbnail-label">
+					<div>Cedar City</div>
+				</div>
 			</div>
 		</div>
 	</body>
@@ -87,20 +92,26 @@
 		mudlakeThumbnailElement.style.height = height+"px";
 
 		let saltlakeThumbnailElement = document.getElementById("saltlake-thumbnail")
+		let saltlakeThumbnailContainerElement = document.getElementById("saltlake-thumbnail-container")
 		height = 100 * scale;
 		left = (770-290-50)*scale;
 		topDist = (970-330-50)*scale;
+		saltlakeThumbnailContainerElement.style.width = height+"px";
+		saltlakeThumbnailContainerElement.style.height = height+"px";
 		saltlakeThumbnailElement.style.width = height+"px";
-		saltlakeThumbnailElement.style.left = left+"px";
-		saltlakeThumbnailElement.style.top = topDist+"px";
+		saltlakeThumbnailContainerElement.style.left = left+"px";
+		saltlakeThumbnailContainerElement.style.top = topDist+"px";
 
 		let cedarcityThumbnailElement = document.getElementById("cedarcity-thumbnail");
+		let cedarcityThumbnailContainerElement = document.getElementById("cedarcity-thumbnail-container");
 		height = 100 * scale;
 		left = (700-290-50)*scale;
 		topDist = (1180-330-50)*scale;
 		cedarcityThumbnailElement.style.width = height+"px";
-		cedarcityThumbnailElement.style.left = left+"px";
-		cedarcityThumbnailElement.style.top = topDist+"px";
+		cedarcityThumbnailContainerElement.style.width = height+"px";
+		cedarcityThumbnailContainerElement.style.height = height+"px";
+		cedarcityThumbnailContainerElement.style.left = left+"px";
+		cedarcityThumbnailContainerElement.style.top = topDist+"px";
 
 
 		// TODO position location icons based on scale
