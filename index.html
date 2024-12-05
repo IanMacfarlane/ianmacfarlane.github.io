@@ -8,6 +8,7 @@
 		<link rel="icon" type="image/png" href="images/larue_thumbnail.png">
 	</head>
 	<body>
+		<div id="background">
 		<div id="homepage">
 			<div id="timeline">
 				<div class="left-textbox">
@@ -114,7 +115,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="background"></div>
+		</div>
 	</body>
 	<script>
 		// center and scale background image
@@ -128,11 +129,13 @@
 		}
 		let scaledWidth = Math.round(3300 * scale);
 		let scaledHeight = Math.round(2400 * scale);
-		backgroundElement.style.height = (2400-mapTopSpace)*scale+"px";
+		backgroundElement.style.height = document.documentElement.scrollHeight+"px";
 		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
 		let translateTop = -1*mapTopSpace*scale;
 		let translateLeft = -290*scale;
 		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
+
+		// TODO fit background height to content
 
 		// styling image thumbnail icons
 		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container");
