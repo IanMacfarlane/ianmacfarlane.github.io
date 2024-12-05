@@ -8,7 +8,7 @@
 		<link rel="icon" type="image/png" href="images/larue_thumbnail.png">
 	</head>
 	<body>
-		<img id="background" src="images/western_us_map.jpg">
+		<div id="background"></div>
 		<div id="homepage">
 			<div id="timeline">
 				<div class="left-textbox">
@@ -128,12 +128,10 @@
 		}
 		let scaledWidth = Math.round(3300 * scale);
 		let scaledHeight = Math.round(2400 * scale);
-		backgroundElement.style.width = scaledWidth+"px";
-		backgroundElement.style.height = scaledHeight+"px";
+		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
 		let translateTop = -1*mapTopSpace*scale;
 		let translateLeft = -290*scale;
-		backgroundElement.style.top = translateTop+"px";
-		backgroundElement.style.left = translateLeft+"px";
+		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
 
 		// styling image thumbnail icons
 		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container");
