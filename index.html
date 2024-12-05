@@ -10,6 +10,37 @@
 	<body>
 		<div id="background"></div>
 		<div id="homepage">
+			<div id="timeline">
+				<div class="left-textbox">
+					<div>1902</div>
+					<div>Birth of LaRue Quayle</div>
+					<div>to John Freeman Quayole and</div>
+					<div>Margaret Ellen Hunter</div>
+					<div>Montpelier Idaho</div>
+				</div>
+				<div class="left-textbox">
+					<div>1920</div>
+					<div>High School Graduation</div>
+					<div>Montpelier Idaho</div>
+				</div>
+				<div class="left-textbox">
+					<div>1921</div>
+					<div>Homesteading with</div>
+					<div>father at Mud Lake</div>
+					<div>Idaho</div>
+				</div>
+				<div class="left-textbox">
+					<div>1922</div>
+					<div>Death of Mother</div>
+					<div>Margaret Ellen Hunter</div>
+				</div>
+				<div class="left-textbox">
+					<div>1926</div>
+					<div>Graduation from</div>
+					<div>nurses training</div>
+					<div>LDS Hospital SLC</div>
+				</div>
+			</div>
 			<div id="larue-thumbnail-container">
 				<img id="larue-thumbnail" src="images/larue_thumbnail.png">
 				<div class="thumbnail-label">
@@ -51,13 +82,13 @@
 		let viewportHeight = window.innerHeight;
 		let backgroundElement = document.getElementById("background");
 		let scale = viewportWidth / 640;
+		let mapTopSpace = 290;
 		if (viewportWidth*(950/640) > viewportHeight) {
-			scale = viewportHeight / (950+40);
+			scale = viewportHeight / (950+(330-mapTopSpace));
 		}
 		let scaledWidth = Math.round(3300 * scale);
 		let scaledHeight = Math.round(2400 * scale);
 		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
-		let mapTopSpace = 290;
 		let translateTop = -1*mapTopSpace*scale;
 		let translateLeft = -290*scale;
 		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
