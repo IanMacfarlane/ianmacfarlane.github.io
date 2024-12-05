@@ -12,16 +12,23 @@
 		<div id="homepage">
 			<div id="larue-thumbnail-container">
 				<img id="larue-thumbnail" src="images/larue_thumbnail.png">
-				<div class="thumbnail-label" id="larue-label">
+				<div class="thumbnail-label">
 					<div>LaRue Quayle</div>
 					<div>1902 - 1992</div>
 				</div>
 			</div>
-			<div>
+			<div id="montpelier-thumbnail-container">
 				<img id="montpelier-thumbnail" src="images/montpelier_idaho_thumbnail.png">
+				<div class="thumbnail-label">
+					<div>Montpelier</div>
+					<div>Idaho</div>
+				</div>
 			</div>
-			<div>
+			<div id="mudlake-thumbnail-container">
 				<img id="mudlake-thumbnail" src="images/mud_lake_idaho_thumbnail.png">
+				<!--<div class="thumbnail-label">
+					<div>Mud Lake</div>
+				</div>-->
 			</div>
 			<div>
 				<img id="saltlake-thumbnail" src="images/salt_lake_thumbnail.png">
@@ -47,39 +54,37 @@
 		let translateLeft = -290*scale;
 		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
 
+		// styling image thumbnail icons
+		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container");
 		let larueThumbnailElement = document.getElementById("larue-thumbnail");
 		let width = 230 * scale;
 		let left = (930-290-230)*scale
 		larueThumbnailElement.style.width = width+"px";
-		//larueThumbnailElement.style.left = left+"px";
-
-		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container");
-		larueThumbnailContainerElement.style.left = left+"px";
 		larueThumbnailContainerElement.style.width = width+"px";
 		larueThumbnailContainerElement.style.height = (308*scale)+"px";
-
-		// TODO move container, change image size
-		let larueLabelElement = document.getElementById("larue-label");
-		let topDist = (300)*scale;
-		left = (960-290-230)*scale;
-		//larueLabelElement.style.top = topDist+"px";
-		//larueLabelElement.style.left = left+"px";
+		larueThumbnailContainerElement.style.left = left+"px";
 
 		let montpelierThumbnailElement = document.getElementById("montpelier-thumbnail");
+		let montpelierThumbnailContainerElement = document.getElementById("montpelier-thumbnail-container");
 		let height = 100 * scale;
 		left = (780-290-50)*scale;
 		topDist = (830-330-50)*scale;
+		montpelierThumbnailContainerElement.style.width = height+"px";
+		montpelierThumbnailContainerElement.style.height = (130*scale)+"px";
+		montpelierThumbnailContainerElement.style.left = left+"px";
+		montpelierThumbnailContainerElement.style.top = topDist+"px";
 		montpelierThumbnailElement.style.width = height+"px";
-		montpelierThumbnailElement.style.left = left+"px";
-		montpelierThumbnailElement.style.top = topDist+"px";
 
 		let mudlakeThumbnailElement = document.getElementById("mudlake-thumbnail");
+		let mudlakeThumbnailContainerElement = document.getElementById("mudlake-thumbnail-container");
 		height = 100 * scale;
 		left = (720-290-50)*scale;
 		topDist = (720-330-50)*scale;
-		mudlakeThumbnailElement.style.width = height+"px";
-		mudlakeThumbnailElement.style.left = left+"px";
-		mudlakeThumbnailElement.style.top = topDist+"px";
+		mudlakeThumbnailContainerElement.style.height = height+"px";
+		mudlakeThumbnailContainerElement.style.width = height+"px";
+		mudlakeThumbnailContainerElement.style.left = left+"px";
+		mudlakeThumbnailContainerElement.style.top = topDist+"px";
+		mudlakeThumbnailElement.style.height = height+"px";
 
 		let saltlakeThumbnailElement = document.getElementById("saltlake-thumbnail")
 		height = 100 * scale;
