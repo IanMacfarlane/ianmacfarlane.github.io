@@ -26,6 +26,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin-top: .5em;
+	margin-left: .5em;
 }
 
 .left-textbox {
@@ -100,6 +101,7 @@ body {
 	display: grid;
 	flex-direction: column;
 	justify-content: center;
+	cursor: pointer;
 }
 
 #mudlake-thumbnail-container {
@@ -107,6 +109,7 @@ body {
 	display: grid;
 	flex-direction: column;
 	justify-content: center;
+	cursor: pointer;
 }
 
 #saltlake-thumbnail-container {
@@ -114,6 +117,7 @@ body {
 	display: grid;
 	flex-direction: column;
 	justify-content: center;
+	cursor: pointer;
 }
 
 #cedarcity-thumbnail-container {
@@ -121,4 +125,5 @@ body {
 	display: grid;
 	flex-direction: column;
 	justify-content: center;
+	cursor: pointer;
 }
