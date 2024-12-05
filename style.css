@@ -45,7 +45,31 @@ body {
 	width: fit-content;
 }
 
+.link_text {
+	text-decoration: underline;
+}
+
 .thumbnail-label {
+	text-decoration: underline;
+	background-color: #ece1c1;
+	opacity: 0.9;
+	border-radius: .2em;
+	position: absolute;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: end;
+	justify-self: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.larue-thumbnail-label {
 	background-color: #ece1c1;
 	opacity: 0.9;
 	border-radius: .2em;
