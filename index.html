@@ -8,7 +8,7 @@
 		<link rel="icon" type="image/png" href="images/larue_thumbnail.png">
 	</head>
 	<body>
-		<div id="background"></div>
+		<img id="background" src="images/western_us_map.jpg">
 		<div id="homepage">
 			<div id="timeline">
 				<div class="left-textbox">
@@ -39,6 +39,46 @@
 					<div>Graduation from</div>
 					<div>nurses training</div>
 					<div>LDS Hospital SLC</div>
+					<div>1926</div>
+					<div>Move to Cedar City</div>
+				</div>
+				<div class="left-textbox">
+					<div>1928</div>
+					<div>Marriage to Joseph</div>
+					<div>Sinclair Macfarlane</div>
+				</div>
+				<div class="left-textbox">
+					<div>1933</div>
+					<div>Birth of Child</div>
+					<div>Richard Quayle Macfarlane</div>
+				</div>
+				<div class="left-textbox">
+					<div>1934</div>
+					<div>Birth of Child</div>
+					<div>Margielee Macfarlane</div>
+				</div>
+				<div class="left-textbox">
+					<div>1938</div>
+					<div>Bought House</div>
+					<div>265S 200W Cedar City</div>
+				</div>
+				<div class="left-textbox">
+					<div>1951</div>
+					<div>Death of Father</div>
+					<div>John Freeman Quayle</div>
+				</div>
+				<div class="left-textbox">
+					<div>1967</div>
+					<div>Retirement from Nursing</div>
+				</div>
+				<div class="left-textbox">
+					<div>1980</div>
+					<div>Death of Spouse</div>
+					<div>Joseph Sinclair Macfarlane</div>
+				</div>
+				<div class="left-textbox">
+					<div>1992</div>
+					<div>Death of LaRue Quayle Macfarlane</div>
 				</div>
 			</div>
 			<div id="larue-thumbnail-container">
@@ -88,10 +128,12 @@
 		}
 		let scaledWidth = Math.round(3300 * scale);
 		let scaledHeight = Math.round(2400 * scale);
-		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
+		backgroundElement.style.width = scaledWidth+"px";
+		backgroundElement.style.height = scaledHeight+"px";
 		let translateTop = -1*mapTopSpace*scale;
 		let translateLeft = -290*scale;
-		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
+		backgroundElement.style.top = translateTop+"px";
+		backgroundElement.style.left = translateLeft+"px";
 
 		// styling image thumbnail icons
 		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container");

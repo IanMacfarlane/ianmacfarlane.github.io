@@ -2,13 +2,12 @@ body {
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 #background {
-	background-image: url('images/western_us_map.jpg');
-	width: 100vw;
-	height: 100vh;
+	position: absolute;
 }
 
 #homepage {
