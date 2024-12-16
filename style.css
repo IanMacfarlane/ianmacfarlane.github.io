@@ -21,6 +21,17 @@ body {
 	flex-direction: column;
 }
 
+#content-page {
+	position: absolute;
+	top: 0;
+	left 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding-left: .5em;
+}
+
 #timeline {
 	position: absolute;
 	display: flex;
