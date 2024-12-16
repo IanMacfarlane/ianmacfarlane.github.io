@@ -30,6 +30,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding-left: .5em;
+	padding-right: .5em;
+	padding-top: .5em;
+	align-items: center;
 }
 
 #timeline {

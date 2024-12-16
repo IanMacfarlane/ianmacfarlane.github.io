@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Our Western Roots</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="images/larue_thumbnail.png">
+	</head>
+	<body>
+		<div id="background">
+		<div id="content-page">
+			<div class="image-content">
+			</div>
+		</div>
+		</div>
+	</body>
+	<script>
+		// center and scale background image
+		let viewportWidth = window.innerWidth;
+		let viewportHeight = window.innerHeight;
+		let backgroundElement = document.getElementById("background");
+		let scale = viewportWidth / 640;
+		let mapTopSpace = 290;
+		if (viewportWidth*(950/640) > viewportHeight) {
+			scale = viewportHeight / (950+(330-mapTopSpace));
+		}
+		let scaledWidth = Math.round(3300 * scale);
+		let scaledHeight = Math.round(2400 * scale);
+		backgroundElement.style.height = document.documentElement.scrollHeight+"px";
+		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
+		let translateTop = -1*mapTopSpace*scale;
+		let translateLeft = -290*scale;
+		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
+
+		//let contentPageElement = document.getElementById("content-page");
+		//contentPageElement.style.width = scaledWidth+"px";
+	</script
+</html>
