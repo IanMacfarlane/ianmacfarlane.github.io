@@ -10,8 +10,10 @@
 	<body>
 		<div id="background">
 		<div id="content-page">
-			<div class="image-content">
-			</div>
+			<img class="image-content" src="images/salt_lake_1920s.jpg">
+			<img class="image-content" src="images/lds_hospital_1912.jpeg">
+			<img class="image-content" src="images/larue_nursing_student.jpg">
+			<img class="image-content" src="images/larue_quayle_nursing_grad_1927.jpg">
 		</div>
 		</div>
 	</body>
@@ -33,6 +35,9 @@
 		let translateLeft = -290*scale;
 		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
 
+		window.onload = function() {
+			backgroundElement.style.height = document.documentElement.scrollHeight+"px";
+		};
 		//let contentPageElement = document.getElementById("content-page");
 		//contentPageElement.style.width = scaledWidth+"px";
 	</script
