@@ -28,16 +28,16 @@ body {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
-	align-items: center;
 	flex-direction: column;
-	padding-left: .5em;
-	padding-right: .5em;
-	padding-top: .5em;
-	padding-bottom: .5em;
+	align-items: center;
+	justify-content: start;
 }
 
 .image-content {
 	max-width: calc(100% - 1em);
+	/*margin-left: .5em;*/
+	/*margin-top: .5em;*/
+	margin-top: .5em;
 }
 .text-content {
 	width: calc(100% - 1em - 10px);
@@ -50,6 +50,9 @@ body {
 	padding-right: 5px;
 	font-family: serif;
 	align-self: start;
+	margin-left: .5em;
+	margin-top: .5em;
+	/*margin-bottom: .5em;*/
 }
 
 #timeline {
