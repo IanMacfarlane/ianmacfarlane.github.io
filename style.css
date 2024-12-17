@@ -9,6 +9,7 @@ body {
 #background {
 	background-image: url("images/western_us_map.jpg");
 	width: 100vw;
+	overflow: hidden;
 }
 
 #homepage {
