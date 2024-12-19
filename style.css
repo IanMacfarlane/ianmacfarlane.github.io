@@ -40,6 +40,8 @@ body {
 	/*margin-top: .5em;*/
 	margin-top: .5em;
 }
+
+
 .text-content {
 	width: calc(100% - 1em - 10px);
 	background-color: #ece1c1;
@@ -181,4 +183,21 @@ body {
 	padding-right: 5px;
 	font-family: serif;
 	align-self: center;
+}
+
+.forward-arrow-container {
+	width: calc(100% - 1em);
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	padding-right: 1em;
+}
+
+.forward-arrow {
+	/*width: 50px;
+	height: 50px;*/
+}
+
+#homepage-arrow {
+	position: absolute
 }

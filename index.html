@@ -122,6 +122,13 @@
 				</div>
 			</div>
 			</a>
+			<div id="homepage-arrow">
+			<div class="forward-arrow-container">
+				<a href="mudlake.html">
+					<img id="homepage-arrow-size" class="forward-arrow" src="images/forward_arrow.png">
+				</a>
+			</div>
+			</div>
 		</div>
 		</div>
 	</body>
@@ -199,7 +206,14 @@
 		cedarcityThumbnailContainerElement.style.left = left+"px";
 		cedarcityThumbnailContainerElement.style.top = topDist+"px";
 
-
+		let forwardArrowElement = document.getElementById("homepage-arrow");
+		let forwardArrowSizeElement = document.getElementById("homepage-arrow-size");
+		height = 100 * scale;
+		left = (850-290-50)*scale;
+		topDist = (1200-mapTopSpace-50)*scale;
+		forwardArrowSizeElement.style.height = height+"px";
+		forwardArrowElement.style.left = left+"px";
+		forwardArrowElement.style.top = topDist+"px";
 		// TODO position location icons based on scale
 		// TODO timeline dates events text
 	</script>
