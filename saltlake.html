@@ -16,7 +16,7 @@
 			<img class="image-content" src="images/larue_quayle_nursing_grad_1927.jpg">
 			<div class="forward-arrow-container">
 				<a href="cedarcity.html">
-					<img class="forward-arrow" src="images/forward_arrow.png">
+					<img id="homepage-arrow-size" class="forward-arrow" src="images/forward_arrow.png">
 				</a>
 			</div>
 		</div>
@@ -39,6 +39,10 @@
 		let translateTop = -1*mapTopSpace*scale;
 		let translateLeft = -290*scale;
 		backgroundElement.style.backgroundPosition = "top "+translateTop+"px left "+translateLeft+"px";
+
+		let forwardArrowSizeElement = document.getElementById("homepage-arrow-size");
+		height = 100 * scale;
+		forwardArrowSizeElement.style.height = height+"px";
 
 		window.onload = function() {
 			backgroundElement.style.height = document.documentElement.scrollHeight+"px";
