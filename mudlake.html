@@ -24,8 +24,6 @@
 		</div>
 	</body>
 	<script>
-		// TODO mud lake description
-
 		// center and scale background image
 		let viewportWidth = window.innerWidth;
 		let viewportHeight = window.innerHeight;
@@ -37,6 +35,7 @@
 		}
 		let scaledWidth = Math.round(3300 * scale);
 		let scaledHeight = Math.round(2400 * scale);
+		backgroundElement.style.height = document.documentElement.scrollHeight+"px";
 		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
 		let translateTop = -1*mapTopSpace*scale;
 		let translateLeft = -290*scale;
@@ -51,7 +50,6 @@
 		forwardArrowSizeElement.style.height = height+"px";
 
 		//backgroundElement.style.height = document.documentElement.scrollHeight+"px";
-		backgroundElement.style.height = document.documentElement.scrollHeight+"px";
 		window.onload = function() {
 			backgroundElement.style.height = document.documentElement.scrollHeight+"px";
 		};
