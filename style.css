@@ -12,6 +12,12 @@ body {
 	overflow: hidden;
 }
 
+#background-new {
+	background-image: url("new-images/old_sorrel_small.png");
+	width: 100vw;
+	overflow: hidden;
+}
+
 #homepage {
 	position: absolute;
 	top: 0;
@@ -22,7 +28,7 @@ body {
 	flex-direction: column;
 }
 
-#content-page {
+#homepage-new {
 	position: absolute;
 	top: 0;
 	left 0;
@@ -31,7 +37,27 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+}
+
+#content-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: start;
+}
+
+#homepage-thumbnails-container {
+	width: 1000px;
+	height: 350px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .image-content {
@@ -126,6 +152,36 @@ body {
 }
 
 #larue-thumbnail-container {
+	position: absolute;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#larue-thumbnail-container-new {
+	position: absolute;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#kimball-thumbnail-container {
+	position: absolute;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#sinclair-thumbnail-container {
+	position: absolute;
+	display: grid;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#julia-thumbnail-container {
 	position: absolute;
 	display: grid;
 	flex-direction: column;
