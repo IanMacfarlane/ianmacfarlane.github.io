@@ -139,9 +139,9 @@
 		let backgroundElement = document.getElementById("background");
 		let scale = viewportWidth / 640;
 		let mapTopSpace = 290;
-		if (viewportWidth*(950/640) > viewportHeight) {
+		/*if (viewportWidth*(950/640) > viewportHeight) {
 			scale = viewportHeight / (950+(330-mapTopSpace));
-		}
+		}*/
 		let scaledWidth = Math.round(3300 * scale);
 		let scaledHeight = Math.round(2400 * scale);
 		backgroundElement.style.height = document.documentElement.scrollHeight+"px";

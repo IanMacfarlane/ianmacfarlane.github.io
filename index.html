@@ -63,7 +63,7 @@
 		let backgroundElement = document.getElementById("background-new");
 		let scale = viewportWidth / 570;
 		// TODO if vertical scale vertical not width
-		if (viewportWidth*(570/320) > viewportHeight) {
+		if ((570/320) > (viewportWidth/viewportHeight)) {
 			scale = viewportHeight / 320;
 		}
 	
