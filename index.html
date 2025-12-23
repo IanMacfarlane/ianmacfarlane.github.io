@@ -70,6 +70,7 @@
 		let scaledWidth = Math.round(570 * scale);
 		let scaledHeight = Math.round(320 * scale);
 		backgroundElement.style.height = document.documentElement.scrollHeight+"px";
+		backgroundElement.style.width = backgroundElement.style.height * (570/240);
 		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
 		// old sorrel background 570 x 320
 
