@@ -61,8 +61,16 @@
 		let viewportWidth = window.innerWidth;
 		let viewportHeight = window.innerHeight;
 		let backgroundElement = document.getElementById("background-new");
+		let scale = viewportWidth / 570;
+		// TODO if vertical scale vertical not width
+		if (viewportWidth*(570/320) > viewportHeight) {
+			scale = viewportHeight / 320;
+		}
+	
+		let scaledWidth = Math.round(570 * scale);
+		let scaledHeight = Math.round(320 * scale);
 		backgroundElement.style.height = viewportHeight+"px";
-		backgroundElement.style.backgroundSize = viewportWidth+"px "+viewportHeight+"px";
+		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
 		// old sorrel background 570 x 320
 
 
