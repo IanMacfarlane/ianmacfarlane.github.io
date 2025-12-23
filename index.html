@@ -74,7 +74,7 @@
 		// old sorrel background 570 x 320
 
 
-
+		let portraitScale = 400;
 
 		let height = 100 * viewportHeight/320;
 		let width = height * 0.8;
@@ -87,7 +87,7 @@
 		sinclairThumbnailContainerElement.style.height = height+"px";
 		sinclairThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
 		sinclairThumbnailContainerElement.style.left = (viewportWidth/4-height)+"px";
-		if ((570/320) > (viewportWidth/viewportHeight)) {
+		if ((portraitScale/320) > (viewportWidth/viewportHeight)) {
 			sinclairThumbnailContainerElement.style.top = 5*scale+"px";
 			sinclairThumbnailContainerElement.style.left = (viewportWidth/2-width/2)+"px";
 		}
@@ -99,7 +99,7 @@
 		larueThumbnailContainerElement.style.height = height+"px";
 		larueThumbnailContainerElement.style.top = (viewportHeight/2-height*.8/2)+"px";
 		larueThumbnailContainerElement.style.left = (viewportWidth/4)+"px";
-		if ((570/320) > (viewportWidth/viewportHeight)) {
+		if ((portraitScale/320) > (viewportWidth/viewportHeight)) {
 			larueThumbnailContainerElement.style.top = 10*scale+height+"px";
 			larueThumbnailContainerElement.style.left = (viewportWidth/2-width/2)+"px";
 		}
@@ -112,7 +112,7 @@
 		kimballThumbnailContainerElement.style.height = height+"px";
 		kimballThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
 		kimballThumbnailContainerElement.style.left = (viewportWidth/4*3-height)+"px";
-		if ((570/320) > (viewportWidth/viewportHeight)) {
+		if ((portraitScale/320) > (viewportWidth/viewportHeight)) {
 			kimballThumbnailContainerElement.style.top = 15*scale+height*2+"px";
 			kimballThumbnailContainerElement.style.left = (viewportWidth/2-height/2)+"px";
 		}
@@ -124,7 +124,7 @@
 		juliaThumbnailContainerElement.style.height = height+"px";
 		juliaThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
 		juliaThumbnailContainerElement.style.left = (viewportWidth/4*3)+"px";
-		if ((570/320) > (viewportWidth/viewportHeight)) {
+		if ((portraitScale/320) > (viewportWidth/viewportHeight)) {
 			juliaThumbnailContainerElement.style.top = 20*scale+height*3+"px";
 			juliaThumbnailContainerElement.style.left = (viewportWidth/2-height/2)+"px";
 		}
