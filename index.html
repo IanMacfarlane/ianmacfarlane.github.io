@@ -64,7 +64,7 @@
 		let scale = viewportWidth / 570;
 		// TODO if vertical scale vertical not width
 		if ((570/320) > (viewportWidth/viewportHeight)) {
-			scale = viewportHeight / 320;
+			scale = viewportHeight / 240;
 		}
 	
 		let scaledWidth = Math.round(570 * scale);
@@ -76,7 +76,7 @@
 
 
 
-		let height = 100 * scale;
+		let height = 100 * viewportHeight/320;
 		// TODO adjust size of thumbnails to match
 		// TODO fit thumbnails to page with responnsive layout
 		let sinclairThumbnailContainerElement = document.getElementById("sinclair-thumbnail-container");
@@ -87,8 +87,8 @@
 		sinclairThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
 		sinclairThumbnailContainerElement.style.left = (viewportWidth/4-height)+"px";
 		if ((570/320) > (viewportWidth/viewportHeight)) {
-			sinclairThumbnailContainerElement.style.top = (viewportHeight/3-height/2)+"px";
-			sinclairThumbnailContainerElement.style.left = (viewportWidth/2-height)+"px";
+			sinclairThumbnailContainerElement.style.top = 5*scale+"px";
+			sinclairThumbnailContainerElement.style.left = (viewportWidth/2-height/2)+"px";
 		}
 
 		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container-new");
@@ -99,8 +99,8 @@
 		larueThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
 		larueThumbnailContainerElement.style.left = (viewportWidth/4)+"px";
 		if ((570/320) > (viewportWidth/viewportHeight)) {
-			larueThumbnailContainerElement.style.top = (viewportHeight/3-height/2)+"px";
-			larueThumbnailContainerElement.style.left = (viewportWidth/2)+"px";
+			larueThumbnailContainerElement.style.top = 10*scale+height+"px";
+			larueThumbnailContainerElement.style.left = (viewportWidth/2-height/2)+"px";
 		}
 
 
@@ -112,8 +112,8 @@
 		kimballThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
 		kimballThumbnailContainerElement.style.left = (viewportWidth/4*3-height)+"px";
 		if ((570/320) > (viewportWidth/viewportHeight)) {
-			kimballThumbnailContainerElement.style.top = (viewportHeight/3*2-height/2)+"px";
-			kimballThumbnailContainerElement.style.left = (viewportWidth/2-height)+"px";
+			kimballThumbnailContainerElement.style.top = 15*scale+height*2+"px";
+			kimballThumbnailContainerElement.style.left = (viewportWidth/2-height/2)+"px";
 		}
 
 		let juliaThumbnailContainerElement = document.getElementById("julia-thumbnail-container");
@@ -124,9 +124,13 @@
 		juliaThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
 		juliaThumbnailContainerElement.style.left = (viewportWidth/4*3)+"px";
 		if ((570/320) > (viewportWidth/viewportHeight)) {
-			juliaThumbnailContainerElement.style.top = (viewportHeight/3*2-height/2)+"px";
-			juliaThumbnailContainerElement.style.left = (viewportWidth/2)+"px";
+			juliaThumbnailContainerElement.style.top = 20*scale+height*3+"px";
+			juliaThumbnailContainerElement.style.left = (viewportWidth/2-height/2)+"px";
 		}
+
+		window.onload = function() {
+			backgroundElement.style.height = document.documentElement.scrollHeight+"px";
+		};
 
 	</script>
 </html>
