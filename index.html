@@ -69,48 +69,64 @@
 	
 		let scaledWidth = Math.round(570 * scale);
 		let scaledHeight = Math.round(320 * scale);
-		backgroundElement.style.height = viewportHeight+"px";
+		backgroundElement.style.height = document.documentElement.scrollHeight+"px";
 		backgroundElement.style.backgroundSize = scaledWidth+"px "+scaledHeight+"px";
 		// old sorrel background 570 x 320
 
 
 
 
+		let height = 100 * scale;
 		// TODO adjust size of thumbnails to match
 		// TODO fit thumbnails to page with responnsive layout
+		let sinclairThumbnailContainerElement = document.getElementById("sinclair-thumbnail-container");
+		let sinclairThumbnailElement = document.getElementById("sinclair-thumbnail");
+		// sinclair 166x223
+		sinclairThumbnailElement.style.height = height+"px";
+		sinclairThumbnailContainerElement.style.height = height+"px";
+		sinclairThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
+		sinclairThumbnailContainerElement.style.left = (viewportWidth/4-height)+"px";
+		if ((570/320) > (viewportWidth/viewportHeight)) {
+			sinclairThumbnailContainerElement.style.top = (viewportHeight/3-height/2)+"px";
+			sinclairThumbnailContainerElement.style.left = (viewportWidth/2-height)+"px";
+		}
+
+		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container-new");
+		let larueThumbnailElement = document.getElementById("larue-thumbnail");
+		// larue 258x346
+		larueThumbnailElement.style.height = height+"px";
+		larueThumbnailContainerElement.style.height = height+"px";
+		larueThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
+		larueThumbnailContainerElement.style.left = (viewportWidth/4)+"px";
+		if ((570/320) > (viewportWidth/viewportHeight)) {
+			larueThumbnailContainerElement.style.top = (viewportHeight/3-height/2)+"px";
+			larueThumbnailContainerElement.style.left = (viewportWidth/2)+"px";
+		}
 
 
 		let kimballThumbnailContainerElement = document.getElementById("kimball-thumbnail-container");
 		let kimballThumbnailElement = document.getElementById("kimball-thumbnail");
 		// kimball 106x116
-		kimballThumbnailElement.style.height = 300+"px";
-		kimballThumbnailContainerElement.style.height = 300+"px";
-		kimballThumbnailContainerElement.style.left = 900+"px";
-		kimballThumbnailContainerElement.style.top = 300+"px";
+		kimballThumbnailElement.style.height = height+"px";
+		kimballThumbnailContainerElement.style.height = height+"px";
+		kimballThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
+		kimballThumbnailContainerElement.style.left = (viewportWidth/4*3-height)+"px";
+		if ((570/320) > (viewportWidth/viewportHeight)) {
+			kimballThumbnailContainerElement.style.top = (viewportHeight/3*2-height/2)+"px";
+			kimballThumbnailContainerElement.style.left = (viewportWidth/2-height)+"px";
+		}
 
 		let juliaThumbnailContainerElement = document.getElementById("julia-thumbnail-container");
 		let juliaThumbnailElement = document.getElementById("julia-thumbnail");
 		// julia 200x200
-		juliaThumbnailElement.style.height = 300+"px";
-		juliaThumbnailContainerElement.style.height = 300+"px";
-		juliaThumbnailContainerElement.style.left = 1200+"px";
-		juliaThumbnailContainerElement.style.top = 300+"px";
-		
-		let sinclairThumbnailContainerElement = document.getElementById("sinclair-thumbnail-container");
-		let sinclairThumbnailElement = document.getElementById("sinclair-thumbnail");
-		// sinclair 166x223
-		sinclairThumbnailElement.style.height = 300+"px";
-		sinclairThumbnailContainerElement.style.height = 300+"px";
-		sinclairThumbnailContainerElement.style.left = 300+"px";
-		sinclairThumbnailContainerElement.style.top = 300+"px";
-
-		let larueThumbnailContainerElement = document.getElementById("larue-thumbnail-container-new");
-		let larueThumbnailElement = document.getElementById("larue-thumbnail");
-		// larue 258x346
-		larueThumbnailElement.style.height = 300+"px";
-		larueThumbnailContainerElement.style.height = 300+"px";
-		larueThumbnailContainerElement.style.left = 600+"px";
-		larueThumbnailContainerElement.style.top = 300+"px";
+		juliaThumbnailElement.style.height = height+"px";
+		juliaThumbnailContainerElement.style.height = height+"px";
+		juliaThumbnailContainerElement.style.top = (viewportHeight/2-height/2)+"px";
+		juliaThumbnailContainerElement.style.left = (viewportWidth/4*3)+"px";
+		if ((570/320) > (viewportWidth/viewportHeight)) {
+			juliaThumbnailContainerElement.style.top = (viewportHeight/3*2-height/2)+"px";
+			juliaThumbnailContainerElement.style.left = (viewportWidth/2)+"px";
+		}
 
 	</script>
 </html>
