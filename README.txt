@@ -1,5 +1,7 @@
 #TODO:
 
+fix mudlake text size
+
 new homepage
 	old sorel background
 	portraits and dates
